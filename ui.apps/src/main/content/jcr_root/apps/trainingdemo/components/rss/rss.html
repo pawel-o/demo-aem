@@ -1,0 +1,13 @@
+<div data-sly-use.rssReader="com.trainingdemo.core.models.Rss">
+    RSS Reader
+    <ul data-sly-list="${rssReader.feeds}">
+        <li>
+            Title: ${item.title}</br>
+            Description: ${item.description}</br>
+            Publish date: ${item.publishDate}</br>
+        </li>
+    </ul>
+</div>
+
+<sly data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+     data-sly-call="${placeholderTemplate.placeholder @ isEmpty = !rssReader.feeds}"></sly>

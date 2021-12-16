@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.trainingdemo.core.services.RssReaderImpl" immediate="true" activate="activate" deactivate="deactivate">
+  <service>
+    <provide interface="java.lang.Runnable"/>
+    <provide interface="com.trainingdemo.core.services.RssReader"/>
+  </service>
+  <reference name="scheduler" interface="org.apache.sling.commons.scheduler.Scheduler" field="scheduler"/>
+  <implementation class="com.trainingdemo.core.services.RssReaderImpl"/>
+</scr:component>

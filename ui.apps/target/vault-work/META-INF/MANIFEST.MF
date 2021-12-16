@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Implementation-Title: training demo - UI apps
+Implementation-Version: 1.0.0-SNAPSHOT
+Built-By: pawel.ociepa
+Implementation-Vendor-Id: com.trainingdemo
+Content-Package-Dependencies: adobe/cq60:core.wcm.components.content:2
+ .8.0,adobe/cq60:core.wcm.components.config:2.8.0
+Import-Package: org.apache.sling.scripting.sightly;version="[2.0.0,3.0
+ .0)"
+Content-Package-Type: application
+Content-Package-Description: UI apps package for training demo
+Content-Package-Roots: /apps/trainingdemo
+Created-By: Apache Maven
+Build-Jdk: 1.8.0_171
+Content-Package-Id: com.trainingdemo:trainingdemo.ui.apps:1.0.0-SNAPSH
+ OT
+

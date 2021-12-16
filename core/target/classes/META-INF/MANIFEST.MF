@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Bundle-Category: ${componentGroupName}
+Bundle-Description: Core bundle for training demo
+Bundle-ManifestVersion: 2
+Bundle-Name: training demo - Core
+Bundle-SymbolicName: trainingdemo.core
+Bundle-Version: 1.0.0.SNAPSHOT
+Export-Package: com.trainingdemo.core.filters;version="1.0";uses:="jav
+ ax.servlet"
+Import-Package: com.adobe.cq.export.json;version="[2.0,3)",com.trainin
+ gdemo.core.filters;version="[1.0,2)",javax.inject;version="[1.0,2)",j
+ avax.servlet;version="[3.1,4)",javax.xml.parsers,org.apache.http;vers
+ ion="[4.4,5)",org.apache.http.client.config;version="[4.5,5)",org.apa
+ che.http.client.methods;version="[4.5,5)",org.apache.http.impl.client
+ ;version="[4.5,5)",org.apache.sling.api;version="[2.3,3)",org.apache.
+ sling.api.request;version="[2.4,3)",org.apache.sling.api.resource;ver
+ sion="[2.11,3)",org.apache.sling.commons.scheduler;version="[2.5,3)",
+ org.apache.sling.models.annotations;version="[1.5,2)",org.slf4j;versi
+ on="[1.7,2)",org.w3c.dom,org.xml.sax,javax.annotation;version="0.0.0"
+Private-Package: com.trainingdemo.core.models,com.trainingdemo.core.mo
+ dels.types,com.trainingdemo.core.services,com.trainingdemo.core.xml
+Provide-Capability: osgi.service;objectClass:List<String>="com.trainin
+ gdemo.core.services.RssReader,java.lang.Runnable";uses:="com.training
+ demo.core.services",osgi.service;objectClass:List<String>="javax.serv
+ let.Filter";uses:="javax.servlet"
+Require-Capability: osgi.service;filter:="(objectClass=org.apache.slin
+ g.commons.scheduler.Scheduler)";effective:=active,osgi.extender;filte
+ r:="(&(osgi.extender=osgi.component)(version>=1.4.0)(!(version>=2.0.0
+ )))",osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.trainingdemo.core.filters.LoggingFilte
+ r.xml,OSGI-INF/com.trainingdemo.core.services.RssReaderImpl.xml
+Sling-Model-Classes: com.trainingdemo.core.models.Rss
+

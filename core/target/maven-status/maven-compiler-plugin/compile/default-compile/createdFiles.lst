@@ -1,0 +1,7 @@
+com/trainingdemo/core/filters/package-info.class
+com/trainingdemo/core/filters/LoggingFilter.class
+com/trainingdemo/core/services/RssReaderImpl.class
+com/trainingdemo/core/services/RssReader.class
+com/trainingdemo/core/models/Rss.class
+com/trainingdemo/core/xml/XmlParser.class
+com/trainingdemo/core/models/types/RssItem.class
